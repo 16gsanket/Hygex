@@ -10,7 +10,7 @@ import FaqSections from "./FaqSections";
 
 function PageContentHolder() {
   return (
-    <div className=" bg-stone-100 h-fit w-full  py-3 px-5 my-5 ">
+    <div className=" bg-stone-100 h-fit w-full  py-3 sm:px-5 px-1 my-5 ">
       <div>
         {/* Page title goes in this section */}
         <h1
@@ -34,21 +34,29 @@ function PageContentHolder() {
             </p>
           </div>
         </div>
-        <div className="h-[7dvh] w-7/12  flex align-middle justify-around items-center ">
+        <div className="h-[7dvh] sm:w-7/12 w-full flex align-middle justify-around items-center ">
           <FaRedoAlt className="text-2xl" />
-          <div className=" w-4/12 flex align-middle justify-around items-center text-stone-950">
+          <div className="w-6/12 sm:w-4/12 flex align-middle justify-around items-center text-stone-950">
             <BackArrow />
-                <p className="text-xl font-semibold">01/10</p>
+            <p className="text-xl font-semibold">01/10</p>
             <FrontArrow />
           </div>
           <MdFullscreen className="text-3xl" />
         </div>
-        <div className="h-[7dvh] w-full flex align-middle justify-between px-10 mt-10">
-    <img src="/logo.png" alt="" height={'10px'}/>
-        <div className="flex align-middle justify-center items-center">
-            <span className="bg-gradient-to-tr from-blue-600 to-blue-900 rounded-full px-3 py-1 text-stone-100 text-2xl font-bold">+</span>
-            <p className="text-lg font-semibold ml-3" style={{color:'#06286E'}}> Create Flashcard</p>
-        </div>
+        <div className="h-[7dvh] w-full  flex align-middle justify-between  sm:px-10 px-0 gap-10 mt-10">
+          <img src="/logo.png" alt="" height={"10px"} />
+          <div className="flex align-middle justify-center items-center">
+            <span className="bg-gradient-to-tr from-blue-600 to-blue-900 rounded-full px-3 py-1 text-stone-100 text-2xl font-bold">
+              +
+            </span>
+            <p
+              className="text-lg font-semibold ml-3"
+              style={{ color: "#06286E" }}
+            >
+              {" "}
+              Create Flashcard
+            </p>
+          </div>
         </div>
         <FaqSections />
       </div>
